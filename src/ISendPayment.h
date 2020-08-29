@@ -7,7 +7,7 @@
 class ISendPayment
         {
 public:
-            virtual void sendPayment()=0;
+            virtual std::string sendPayment()=0;
 
         };
 

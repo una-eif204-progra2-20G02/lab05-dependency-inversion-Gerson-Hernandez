@@ -10,7 +10,7 @@
 
 class CheckSender: public ISendPayment{
 public:
-    std::string sendPayment() const;
+    std::string sendPayment()  override;
 };
 
 

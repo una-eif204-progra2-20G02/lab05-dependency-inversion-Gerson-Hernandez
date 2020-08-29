@@ -3,6 +3,7 @@
 
 #include <string>
 #include <ostream>
+#include "ISendPayment.h"
 #include "BankTransferSender.h"
 #include "CashSender.h"
 #include "CheckSender.h"
@@ -31,9 +32,8 @@ public:
 
     void setDocumentId(int documentId);
 
-    std::string processPaymentBankTransfer();
-    std::string processPaymentCash();
-    std::string processPaymentCheck();
+    std::string PaymentMethod(ISendPayment* payment);
+
 
     virtual std::string toString() const; // Virtual
 private:
