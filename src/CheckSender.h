@@ -6,6 +6,7 @@
 #define LAB05_DEPENDENCY_INVERSION_SOLUTION_CHECKSENDER_H
 
 #include <string>
+#include "ISendPayment.h"
 
 class CheckSender{
 public:

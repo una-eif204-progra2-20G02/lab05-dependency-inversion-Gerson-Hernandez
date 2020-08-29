@@ -7,6 +7,7 @@
 
 
 #include <string>
+#include "ISendPayment.h"
 
 class BankTransferSender  {
 public:
