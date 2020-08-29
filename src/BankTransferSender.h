@@ -9,7 +9,7 @@
 #include <string>
 #include "ISendPayment.h"
 
-class BankTransferSender  {
+class BankTransferSender: public ISendPayment  {
 public:
     std::string sendPayment() const;
 };
